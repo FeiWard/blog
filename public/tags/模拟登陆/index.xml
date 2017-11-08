@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>模拟登陆 on BLOG</title>
+    <link>/tags/%E6%A8%A1%E6%8B%9F%E7%99%BB%E9%99%86/index.xml</link>
+    <description>Recent content in 模拟登陆 on BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2015 Nishanth Shanmugham</copyright>
+    <atom:link href="/tags/%E6%A8%A1%E6%8B%9F%E7%99%BB%E9%99%86/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>微信模拟登陆</title>
+      <link>/blog/%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%8B%9F%E7%99%BB%E9%99%86/</link>
+      <pubDate>Sat, 16 Jan 2016 04:27:58 +0000</pubDate>
+      
+      <guid>/blog/%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%8B%9F%E7%99%BB%E9%99%86/</guid>
+      <description>&lt;h2 id=&#34;微信公众号&#34;&gt;微信公众号&lt;/h2&gt;
+
+&lt;p&gt;近来开了一个公众号，之前做了一个校园家教、讲座、校车等零碎信息的聚合，主要也是基于python的爬虫。但是由于是免费的个人订阅号用户，开发者模式下的限制还是比较多的，比如开发模式下无法创建菜单就是一个令人无比心痛的限制。而且基于微信的理念，主动推送消息一直也是微信所不欢迎的。但是有了模拟登陆，普通用户也可以主动发送消息给订阅者了，当然，由于微信公众号的明确规定，48小时内该订阅者未主动发送消息给公众号，则该公众号无法主动发送消息给订阅者。这条限制就没有办法了，不过基于模拟登陆，可以做的事还是挺多的，比如监控女朋友的知乎、微博等动态，一有新消息就通过公众号推送给自己；监控自己的公交卡余额，低于某阈值则通过公众号将余额推送给自己，方便自己的出行。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;python爬虫&#34;&gt;python爬虫&lt;/h2&gt;
+
+&lt;p&gt;这次微信公众号的模拟登陆抛弃了urllib和urllib2，而选择了requests，相对于前者，后者的确方便了很多，对于不想纠结其中网络访问过程的人来说，的确遍历了不少。除此之外，就是一些很常规的爬虫技巧，比如伪装成浏览器，通过开发者工具观察真实访问地址以及需要提交的数据等。&lt;/p&gt;
+
+&lt;h2 id=&#34;微信模拟登陆&#34;&gt;微信模拟登陆&lt;/h2&gt;
+
+&lt;p&gt;首先在谷歌上搜索了“微信模拟登陆”的关键字，查到了&lt;a href=&#34;https://github.com/daoluan/WXSender-Python/blob/master/wxsender.py&#34;&gt;wxsender&lt;/a&gt;，没有下载下来运行过，但是从url来看好像和现在的不太一样，毕竟作者很长时间没有更新了，于是就重新写了一下，感谢&lt;a href=&#34;https://github.com/daoluan&#34;&gt;daoluan&lt;/a&gt;的工作。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Talk is cheap, show me the code.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;github地址&lt;a href=&#34;https://github.com/camelshang/WechatLogin&#34;&gt;WechatLogin&lt;/a&gt;,全部代码如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding:utf-8 -*-
+&amp;quot;&amp;quot;&amp;quot;
+2015-01-16 by Camel
+https://github.com/daoluan/WXSender-Python/ is acknowledged
+
+&amp;quot;&amp;quot;&amp;quot;
+import requests
+import hashlib
+import re
+import time
+
+
+class WeiXin:
+
+    def __init__(self):
+        # 公众号登陆账号密码
+        self.unm = &amp;quot;your name&amp;quot;
+        self.pwd = &amp;quot;your password&amp;quot;
+        self.token = &#39;&#39;
+        self.fakeid = &#39;&#39;
+        # 字典存储用户与fakeid的关系
+        self.users = {}
+        self.msg2user_capable = {}
+        # session自动处理cookies
+        self.session = requests.Session()
+
+    def login(self):
+        &amp;quot;&amp;quot;&amp;quot;登陆&amp;quot;&amp;quot;&amp;quot;
+        headers = {
+            &amp;quot;Host&amp;quot;: &amp;quot;mp.weixin.qq.com&amp;quot;,
+            &amp;quot;Referer&amp;quot;: &amp;quot;https://mp.weixin.qq.com/&amp;quot;,
+            &amp;quot;User-Agent&amp;quot;: &amp;quot;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36&amp;quot;
+        }
+        data = {
+            &amp;quot;username&amp;quot;: self.unm,
+            &amp;quot;pwd&amp;quot;: hashlib.md5(self.pwd).hexdigest(),
+            &amp;quot;imgcode&amp;quot;: &#39;&#39;,
+            &amp;quot;f&amp;quot;: &amp;quot;json&amp;quot;
+        }
+        url_login = &amp;quot;https://mp.weixin.qq.com/cgi-bin/login&amp;quot;
+        r_login = self.session.post(url_login, data=data, headers=headers)
+        try:
+            self.token = re.findall(&amp;quot;token=(\d*)&amp;quot;, r_login.content)[0]
+            print &amp;quot;token &amp;quot;, self.token
+            if self.token != &#39;&#39;:
+                print &amp;quot;login success and get token!&amp;quot;
+                # 登陆之后转入首页，可去掉
+                url_index = &amp;quot;https://mp.weixin.qq.com/cgi-bin/home?t=home/index&amp;amp;lang=zh_CN&amp;amp;token=%s&amp;quot; % self.token
+                r_index = self.session.get(url_index)
+                if r_index.status_code == 200:
+                    print &amp;quot;get the index&amp;quot;
+                else:
+                    print &amp;quot;get index failed&amp;quot;
+            else:
+                print &amp;quot;login failed&amp;quot;
+        except:
+            print &amp;quot;get token error&amp;quot;
+
+    def get_fakeid(self):
+        &amp;quot;&amp;quot;&amp;quot;得到自己的fakeid&amp;quot;&amp;quot;&amp;quot;
+        url_fakeid = &amp;quot;https://mp.weixin.qq.com/cgi-bin/settingpage?t=setting/index&amp;amp;action=index&amp;amp;token=%s&amp;amp;lang=zh_CN&amp;quot; % self.token
+        r_fakeid = self.session.get(url_fakeid)
+        try:
+            self.fakeid = re.findall(&amp;quot;fakeid=(\d{10})&amp;quot;, r_fakeid.content)[0]
+            print &amp;quot;get fakeid &amp;quot;, self.fakeid
+        except:
+            print &amp;quot;get fakeid error&amp;quot;
+
+    def get_users(self):
+        &amp;quot;&amp;quot;&amp;quot;微信更改网址，推荐用users_capable
+           得到用户昵称和对应fakeid，写入users字典&amp;quot;&amp;quot;&amp;quot;
+        url_user = &amp;quot;https://mp.weixin.qq.com/cgi-bin/contactmanage?t=user/index&amp;amp;pageidx=0&amp;amp;type=0&amp;amp;token=%s&amp;amp;lang=zh_CN&amp;quot; % self.token
+        r_user = self.session.get(url_user)
+        total_users = int(re.findall(&amp;quot;totalCount : &#39;(\d*)&#39;&amp;quot;, r_user.content)[0])
+        page_count = int(re.findall(&amp;quot;pageCount : (\d*)&amp;quot;, r_user.content)[0])
+        page_size = int(re.findall(&amp;quot;pageSize : (\d*),&amp;quot;, r_user.content)[0])
+        user_ids = []
+        user_names = []
+        for pageidx in xrange(page_count):
+            url_userpage = &amp;quot;https://mp.weixin.qq.com/cgi-bin/contactmanage?t=user/index&amp;amp;pageidx=%s&amp;amp;type=0&amp;amp;token=%s&amp;amp;lang=zh_CN&amp;quot; % (
+                str(pageidx), self.token)
+            r_userid = self.session.get(url_userpage)
+            thepage_user = re.findall(&amp;quot;\&amp;quot;id\&amp;quot;:\&amp;quot;(.*?){28}\&amp;quot;&amp;quot;, r_userid.content)
+            thepage_username = re.findall(
+                &amp;quot;\&amp;quot;nick_name\&amp;quot;:\&amp;quot;(.*?)\&amp;quot;&amp;quot;, r_userid.content)
+            user_ids += thepage_user
+            user_names += thepage_username
+        self.users = dict(zip(user_names, user_ids))
+        print &amp;quot;get users done&amp;quot;
+
+    def get_users_capable(self):
+        url_msgusers = &amp;quot;https://mp.weixin.qq.com/cgi-bin/message?t=message/list&amp;amp;action=&amp;amp;keyword=&amp;amp;offset=0&amp;amp;count=%d&amp;amp;day=7&amp;amp;filterivrmsg=&amp;amp;token=%s&amp;amp;lang=zh_CN&amp;quot;
+        r_msgusers = self.session.get(url_msgusers % (20,self.token))
+        total_msg = int(re.findall(r&#39;total_count : (\d*)&#39;, r_msgusers.content)[0])
+        r_allmsgusers = self.session.get(url_msgusers % (total_msg,self.token))
+        fakeid = re.findall(r&amp;quot;\&amp;quot;fakeid\&amp;quot;:\&amp;quot;(.*?){28}\&amp;quot;&amp;quot;, r_allmsgusers.content)
+        nick_name = re.findall(r&amp;quot;\&amp;quot;nick_name\&amp;quot;:\&amp;quot;(.*?)\&amp;quot;&amp;quot;, r_allmsgusers.content)
+        date_time = map(int, re.findall(r&amp;quot;\&amp;quot;date_time\&amp;quot;:(\d*)&amp;quot;, r_allmsgusers.content))
+        now = time.time()
+        less_than_48h = [i for i in date_time if now-i &amp;lt; 172800]
+        msg_capable = len(less_than_48h)
+        fakeid_capable = list(set(fakeid[:msg_capable]))
+        nick_name_capable = list(set(nick_name[:msg_capable]))
+        self.msg2user_capable = dict(zip(nick_name_capable, fakeid_capable))
+        print &amp;quot;get users_capable done&amp;quot;
+
+    def msg2user(self, msg, touserid):
+        &amp;quot;&amp;quot;&amp;quot;发送消息给单个指定用户&amp;quot;&amp;quot;&amp;quot;
+        url_msg = &amp;quot;https://mp.weixin.qq.com/cgi-bin/singlesend?t=ajax-response&amp;amp;f=json&amp;amp;token=%s&amp;amp;lang=zh_CN&amp;quot; % self.token
+        msg_headers = {
+            &amp;quot;Host&amp;quot;: &amp;quot;mp.weixin.qq.com&amp;quot;,
+            &amp;quot;Origin&amp;quot;: &amp;quot;https://mp.weixin.qq.com&amp;quot;,
+            &amp;quot;Referer&amp;quot;: &amp;quot;https://mp.weixin.qq.com/cgi-bin/singlesendpage?t=message/send&amp;amp;action=index&amp;amp;tofakeid=%s&amp;amp;token=%s&amp;amp;lang=zh_CN&amp;quot; % (touserid, self.token),
+            &amp;quot;User-Agent&amp;quot;: &amp;quot;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36&amp;quot;
+        }
+        msg_data = {
+            &amp;quot;token&amp;quot;: self.token,
+            &amp;quot;lang&amp;quot;: &amp;quot;zh_CN&amp;quot;,
+            &amp;quot;f&amp;quot;: &amp;quot;json&amp;quot;,
+            &amp;quot;ajax&amp;quot;: &amp;quot;1&amp;quot;,
+            &amp;quot;random&amp;quot;: &amp;quot;0.4469808244612068&amp;quot;,
+            &amp;quot;type&amp;quot;: &amp;quot;1&amp;quot;,
+            &amp;quot;content&amp;quot;: msg,
+            &amp;quot;tofakeid&amp;quot;: touserid,
+            &amp;quot;imgcode&amp;quot;: &#39;&#39;
+        }
+        r_msg = self.session.post(url_msg, data=msg_data, headers=msg_headers)
+        if r_msg.status_code == 200:
+            err_msg = re.findall(&amp;quot;\&amp;quot;err_msg\&amp;quot;:\&amp;quot;(.*?)\&amp;quot;&amp;quot;, r_msg.content)[0]
+            # 发送成功
+            if err_msg == &#39;ok&#39;:
+                print &amp;quot;send msg %s to %s done&amp;quot; % (msg,touserid)
+            # 微信限制，用户48小时内没有主动发送消息，则公众号无法发送消息给该用户
+            elif err_msg == &#39;customer block&#39;:
+                print &amp;quot;denied because the user hasn&#39;t send msg to you in the past 48 hours&amp;quot;
+            else:
+                print &amp;quot;failed,&amp;quot;, err_msg
+        else:
+            print &amp;quot;send msg to %s failed,and the err_msg %s&amp;quot; % (touserid, r_msg.status_code)
+
+    def msg2users(self, msg):
+    	for user in self.msg2user_capable:
+    		self.msg2user(msg, self.msg2user_capable[user])
+
+    def send2user(self, msg, touser):
+        &amp;quot;&amp;quot;&amp;quot;msg : str
+           touser : 用户的昵称&amp;quot;&amp;quot;&amp;quot;
+        self.login()
+        self.get_fakeid()
+        self.get_users_capable()
+        if touser in self.msg2user_capable:
+            print &amp;quot;user %s exists&amp;quot; % touser
+            self.msg2user(msg, self.msg2user_capable[touser])
+        else:
+            print &amp;quot;user %s not exists&amp;quot; % touser
+
+    def send2users(self, msg):
+        self.login()
+        self.get_fakeid()
+        self.get_users_capable()
+        self.msg2users(msg)
+
+
+wx = WeiXin()
+wx.send2user(&#39;test测试&#39;, &#39;Camel&#39;) # &#39;Camel&#39;是我的昵称，请替换成自己的
+wx.send2users(&#39;test测试二&#39;)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;运行结果如下图所示&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://7xt5lb.com2.z0.glb.clouddn.com/wx_res.JPG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;微信得到推送消息如下图&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://7xt5lb.com2.z0.glb.clouddn.com/wx_res_cut_resize.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;后续工作&#34;&gt;后续工作&lt;/h2&gt;
+
+&lt;p&gt;按照前面的设想，后续就是让服务器去不断爬自己需要的数据，然后在设定的情况下通过公众号推送给自己。或许，按照微信的发展理念，以后微信的应用号估计也很难突破主动发送消息给用户的限制，因此作为微信重度用户，个人拿来玩玩儿还是不错的。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
