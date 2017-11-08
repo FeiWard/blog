@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>/projects/read/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/papers/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/mooc/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>blog/windows%E5%AE%89%E8%A3%85caffe%E5%B9%B6%E7%BC%96%E8%AF%91fast-rcnn-demo/</loc>
+    <lastmod>2016-09-01T20:56:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>blog/%E7%BF%BB%E5%A2%99%E5%B0%8F%E7%BB%93/</loc>
+    <lastmod>2016-08-31T19:24:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>blog/caffe%E8%BD%BB%E5%BA%A6%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</loc>
+    <lastmod>2016-05-05T21:39:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>blog/%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%8B%9F%E7%99%BB%E9%99%86/</loc>
+    <lastmod>2016-01-16T04:27:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>blog/%E9%81%BF%E5%BC%80%E7%99%BE%E5%BA%A6%E8%BF%8E%E6%9D%A5%E8%B0%B7%E6%AD%8C/</loc>
+    <lastmod>2016-01-12T18:06:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2015-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/projects/</loc>
+    <lastmod>2015-08-19T20:29:37-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/anaconda/</loc>
+    <lastmod>2016-05-05T21:39:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/blog/</loc>
+    <lastmod>2016-09-01T20:56:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/caffe/</loc>
+    <lastmod>2016-09-01T20:56:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/cuda/</loc>
+    <lastmod>2016-05-05T21:39:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/fast-rcnn/</loc>
+    <lastmod>2016-09-01T20:56:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/hosts/</loc>
+    <lastmod>2016-08-31T19:24:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/projects/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/projects/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/python/</loc>
+    <lastmod>2016-01-16T04:27:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/python/</loc>
+    <lastmod>2016-01-16T04:27:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/windows/</loc>
+    <lastmod>2016-09-01T20:56:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/xxnet/</loc>
+    <lastmod>2016-08-31T19:24:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%85%AC%E4%BC%97%E5%8F%B7/</loc>
+    <lastmod>2016-01-16T04:27:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%BE%AE%E4%BF%A1/</loc>
+    <lastmod>2016-01-16T04:27:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E6%89%AF%E6%B7%A1/</loc>
+    <lastmod>2016-08-31T19:24:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E6%A8%A1%E6%8B%9F%E7%99%BB%E9%99%86/</loc>
+    <lastmod>2016-01-16T04:27:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E7%88%AC%E8%99%AB/</loc>
+    <lastmod>2016-01-16T04:27:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E7%99%BE%E5%BA%A6/</loc>
+    <lastmod>2016-01-12T18:06:59+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E7%A7%91%E7%A0%94/</loc>
+    <lastmod>2016-09-01T20:56:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E7%BF%BB%E5%A2%99/</loc>
+    <lastmod>2016-08-31T19:24:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E8%93%9D%E7%81%AF/</loc>
+    <lastmod>2016-08-31T19:24:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E8%A1%80%E5%8F%8B%E7%97%85/</loc>
+    <lastmod>2016-01-12T18:06:59+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E8%B0%B7%E6%AD%8C/</loc>
+    <lastmod>2016-01-12T18:06:59+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
