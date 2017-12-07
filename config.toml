@@ -1,4 +1,4 @@
-baseurl = "github.io/camelshang"
+baseurl = "/"
 theme = "cocoa-eh"
 builddrafts = true
 canonifyurls = true
@@ -6,8 +6,8 @@ contentdir = "content"
 languageCode = "en-US"
 layoutdir = "layouts"
 publishdir = "public"
-author = ""
-title = ""
+author = "Camel Shang"
+title = "Camel Shang"
 disqusshortname = ""
 pluralizelisttitles = false
 
@@ -17,18 +17,18 @@ blog = "blog/:slug/"
 [params]
 dateform = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
-description = "Example blog"
-copyright = "Copyright © 2017 Shang"
+description = "Camel Shang blog"
+copyright = "Copyright © 2017 Camel Shang"
 # copyrightUrl = "https://creativecommons.org/licenses/by-sa/4.0/"
-logofile = "img/logo.png"
+logofile = "img/mylogo-wb.jpg"
 faviconfile = "img/favicon.ico"
 highlightjs = true
 progressively = true
 share = true
 latestpostcount = 5
 github = "camelshang"
-email = "wangzixiao36@outlook.com"
-linkedin = "camelshang"
+email = ""
+linkedin = ""
 twitter = ""
 facebook = ""
 social_banner = "img/banner.png"
@@ -37,7 +37,6 @@ posts_navigation = true
 # issoHost = "comments.domain.tld:1234"
 # githubRepo = "githubUsername/repositoryName"
 small_banner_logo = false
-best = true
 
 [params.colors]
 identifier = "#527fc1f"

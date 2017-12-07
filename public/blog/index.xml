@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Camel Shang</title>
+    <link>/blog/</link>
+    <description>Recent content in Blog on Camel Shang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2017 Camel Shang</copyright>
+    <lastBuildDate>Thu, 07 Dec 2017 14:24:40 +0800</lastBuildDate>
+    
+	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Siamese Notes</title>
+      <link>/blog/siamese-notes/</link>
+      <pubDate>Thu, 07 Dec 2017 14:24:40 +0800</pubDate>
+      
+      <guid>/blog/siamese-notes/</guid>
+      <description>做法 通过样本相似度驱动权重共享的网络学习嵌入的隐变量表达(embedding vector representation)
+siamese network Learning a Similarity Metric Discriminatively, with Application to Face Verofocation 假设对于正对 $ (X_1, X_2) $ 和负对$$(X_1, X_2^{&amp;lsquo;})$$
+$$\exists m&amp;gt;0, E_W(X_1, X_2)+m&amp;lt;E_W(X-1,X_2^&amp;lsquo;).$$
+损失函数
+$$ L(W)=\sum_{i=1}^{P}\ell(W,(Y,X_1,X_2)^{i}) $$ $$ \ell(W,(Y,X_1,X_2)^{i} = (1-Y)\ell_G(E_W(X_1,X_2)^i) + Y\ell_I(E_W(X_1,X_2)^i) $$
+Dimensionality Reduction by Learning an Invariant Mapping 对比损失函数(contrastive loss function)
+$$ \ell(W,Y,X_1,X_2) = (1-Y){1\over2}(D_W)^2 + (Y){1\over2}{max(0,m-D_W)}^2 $$
+triplet loss Learning fine-grained image similarity with deep ranking deep metreic learning using triplet network 假设: 对于选择的粗略相似度度量$r$, 我们希望学习到相似度函数表达 $S$</description>
+    </item>
+    
+    <item>
+      <title>Tracking Notes</title>
+      <link>/blog/tracking-notes/</link>
+      <pubDate>Thu, 07 Dec 2017 13:53:47 +0800</pubDate>
+      
+      <guid>/blog/tracking-notes/</guid>
+      <description>task Given the initialized state (e.g., position and size) of a target object in a frame of a video, the goal of tracking is to estimate the states of the target in the subsequent frames.
+difficulties  illumination variation occlusion background clutters fast motion Out-of-Plane Rotation scale variation  common modules  target representation scheme search mechanism model update context information  evaluation  Precision Plot. Center location error. Success Plot.</description>
+    </item>
+    
+    <item>
+      <title>windows安装caffe并编译fast-rcnn-demo</title>
+      <link>/blog/windows%E5%AE%89%E8%A3%85caffe%E5%B9%B6%E7%BC%96%E8%AF%91fast-rcnn-demo/</link>
+      <pubDate>Thu, 01 Sep 2016 20:56:28 +0000</pubDate>
+      
+      <guid>/blog/windows%E5%AE%89%E8%A3%85caffe%E5%B9%B6%E7%BC%96%E8%AF%91fast-rcnn-demo/</guid>
+      <description>microsoft caffe 首先在微软github主页下载microsoft-caffe，官方的编译运行文档写得比较详细，按照步骤来利用VS编译一般没什么问题。一般常见的问题是error C2220: 警告被视为错误，只需右键项目，属性，C/C++，Treat Warnings as Error设置为No即可。附上个人的CommonSettings.props，仅供参考。
+所有项目编译成功之后，将caffe_root\Build\x64\Release\pycaffe设置环境变量PythonPath。设置之后打开Python，若import caffe成功则表示编译成功。
+caffe mnist 示例 Windows下很多人用cygwin来模拟一些Linux操作，个人推荐使用Babun，一款优雅好用的Windows shell工具。
+按照caffe官网mnist文档一步一步即可。
+下载数据集  进入babun cd到caffe_root 输入./data/mnist/get_mnist.sh  转化数据集为lmdb  修改./examples/mnist/create_mnist.sh, 第8行BUILD=build/examples/mnist &amp;ndash;&amp;gt; BUILD=Build/x64/Release, 第17行和第19行convert_mnist_data.bin &amp;ndash;&amp;gt; convert_mnist_data 同样在Babun下，输入./examples/mnist/create_mnist.sh  训练Lenet  修改./examples/mnist/train_lenet.sh, 第4行./build/tools/caffe train &amp;ndash;solver=examples/mnist/lenet_solver.prototxt $@ &amp;ndash;&amp;gt;
+ BUILD=Build/x64/Release $BUILD/caffe train --solver=examples/mnist/lenet_solver.prototxt $@  在babun下，输入./examples/mnist/train_lenet.sh，得到如下图结果，示例mnist成功跑通
+  fast rcnn demo示例 上面这些步骤完成后，如果直接进入fastrcnn-root,运行python ./tools/demo.py（注意：此时在cmd中运行即可，目前babun自带Python，但是好像不能调用系统自带的python）会提示不存在ROIPooling，导致demo运行失败。进入caffe项目发现，roi_pooling_layer.cpp 以及 roi_pooling_layer.cu根本就没有编译。因此将 roi_pooling_layer.cpp 添加进 libcaffe-src 中，将 roi_pooling_layer.cu 添加进 libcaffe-cu 中，再重新编译即可。
+再次运行python ./tools/demo.py得到结果如下
+后续 后续就是在fast rcnn上训练自己的数据了，Linux上已经跑通，Windows上有待测试。</description>
+    </item>
+    
+    <item>
+      <title>翻墙小结</title>
+      <link>/blog/%E7%BF%BB%E5%A2%99%E5%B0%8F%E7%BB%93/</link>
+      <pubDate>Wed, 31 Aug 2016 19:24:13 +0000</pubDate>
+      
+      <guid>/blog/%E7%BF%BB%E5%A2%99%E5%B0%8F%E7%BB%93/</guid>
+      <description>&lt;h1 id=&#34;gfw&#34;&gt;GFW&lt;/h1&gt;
+
+&lt;p&gt;互联网时代，透过你在网络上的痕迹，你看到的，正是你自己。&lt;/p&gt;
+
+&lt;p&gt;每天有无数的信息资讯在互联网上传播，你选择看什么，是你的自由，这些也正是你个人意识的体现。前段时间，正值全球关注的奥运盛会，我关掉通知，不上门户网站，偶尔看下知乎，突然发现，如这般的大事件，只要我不想去关注它，它就好像不曾出现在信息流中一样。&lt;/p&gt;
+
+&lt;p&gt;GFW正是这般的存在，国内的互联网服务相对比较完善，有搜索引擎百度、搜狗、bing，有支付服务支付宝、微信以及银联等，有电商网站淘宝、天猫、京东、亚马逊、当当、一号店、苏宁易购等，有快递服务顺丰、申通、中通等，有外卖服务饿了么、百度外卖等，有团购服务如美团、大众点评等，有社交平台微信、QQ、微博、陌陌、知乎等，有视频网站优酷、a爱奇艺、土豆等，有打车服务滴滴、快的等······似乎一个局域网，就能满足你的生活需求。&lt;/p&gt;
+
+&lt;p&gt;然而，没有意识到的东西，并不代表它不存在。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>caffe轻度使用体验</title>
+      <link>/blog/caffe%E8%BD%BB%E5%BA%A6%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</link>
+      <pubDate>Thu, 05 May 2016 21:39:28 +0000</pubDate>
+      
+      <guid>/blog/caffe%E8%BD%BB%E5%BA%A6%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</guid>
+      <description>&lt;h1 id=&#34;简单说明&#34;&gt;简单说明&lt;/h1&gt;
+
+&lt;p&gt;caffe毫无疑问是现在使用比较广泛的深度学习网络框架，每一个学习卷积神经网络的人，应该都不可避免要体验一下caffe的特性和魔力。&lt;/p&gt;
+
+&lt;p&gt;由于第一次在装cuda时，不小心将ubuntu装死，导致在登陆界面无法登陆，输入正确密码后闪一两秒钟然后又回到登陆界面。用谷歌搜索各种解决方法均无效后，索性重装系统，然后记录每一步。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>微信模拟登陆</title>
+      <link>/blog/%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%8B%9F%E7%99%BB%E9%99%86/</link>
+      <pubDate>Sat, 16 Jan 2016 04:27:58 +0000</pubDate>
+      
+      <guid>/blog/%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%8B%9F%E7%99%BB%E9%99%86/</guid>
+      <description>&lt;h2 id=&#34;微信公众号&#34;&gt;微信公众号&lt;/h2&gt;
+
+&lt;p&gt;近来开了一个公众号，之前做了一个校园家教、讲座、校车等零碎信息的聚合，主要也是基于python的爬虫。但是由于是免费的个人订阅号用户，开发者模式下的限制还是比较多的，比如开发模式下无法创建菜单就是一个令人无比心痛的限制。而且基于微信的理念，主动推送消息一直也是微信所不欢迎的。但是有了模拟登陆，普通用户也可以主动发送消息给订阅者了，当然，由于微信公众号的明确规定，48小时内该订阅者未主动发送消息给公众号，则该公众号无法主动发送消息给订阅者。这条限制就没有办法了，不过基于模拟登陆，可以做的事还是挺多的，比如监控女朋友的知乎、微博等动态，一有新消息就通过公众号推送给自己；监控自己的公交卡余额，低于某阈值则通过公众号将余额推送给自己，方便自己的出行。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>避开百度迎来谷歌</title>
+      <link>/blog/%E9%81%BF%E5%BC%80%E7%99%BE%E5%BA%A6%E8%BF%8E%E6%9D%A5%E8%B0%B7%E6%AD%8C/</link>
+      <pubDate>Tue, 12 Jan 2016 18:06:59 +0000</pubDate>
+      
+      <guid>/blog/%E9%81%BF%E5%BC%80%E7%99%BE%E5%BA%A6%E8%BF%8E%E6%9D%A5%E8%B0%B7%E6%AD%8C/</guid>
+      <description> 关于百度 百度是一家什么公司，在此就不多加叙述了。仅以鲁迅先生的一句话作结： &amp;gt; 我向来是不惮以最坏的恶意，来推测百度的，然而我还不料，也不信竟会下劣凶残到这地步。
+百度号称作为第一大中文搜索引擎，这两天因卖血友病贴吧吧主而闹得甚嚣尘上。请移步百度贴吧的血友病吧被卖了，原吧主小吧主突然间全部被拿下。如何看待这样的行为？ 以及百度作了哪些恶？。我不禁想起了百度的由来： &amp;gt; 众里寻他千百度，暮然回首，那人却在大把捞钱处。
+推荐霍炬的文章我是如何坚持10多年站在反百度第一线的。
+避开百度 身在天朝，避开百度是一家习惯上的改变问题。提供一下方案。 1. 使用搜索引擎bing。 2. 翻墙用google搜索引擎。 - 付费 + 购买国外VPS搭建shadowsocks + 购买shadowscoks套餐 - 免费 + 代理软件，如赛风，蓝灯等 + 修改hosts
+在此，仅对免费方案下的修改hosts进行详细说明，因为hosts里的ip相对来说，免费易得，对于翻墙只需要google搜索、facebook设计等用户群来说是最佳的选择。
+个人常用的网站是ipv4 hosts，校园网用户可访问ipv6 hosts。选择下图中相应的服务之后点击下方的立即获取，就可以在下方的hosts区域获得相应服务的ip地址。
+将这些ip地址复制到windows下的 &amp;gt; C:/windows/system32/drivers/ect/hosts
+或者linux下的 &amp;gt; /etc/hosts
+的hosts文件中，保存（如出现权限问题，请修改相应权限再复制，或者创建hosts文件，将上面的ip作为文件内容保存，再在相应位置覆盖即可）。
+这时在浏览器访问google https://www.google.com或者facebook https://www.facebook.com或者twitter https://www.twitter.com即可了。注意，请用https而非http来访问。 注意，请用https而非http来访问。 注意，请用https而非http来访问。
+如果此时访问404，可能是DNS缓存的问题。windows用户按下win+r打开cmd后，输入
+ipconfig /flushdns  或linux用户打开终端运行
+/etc/rc.d/init.d/nscd restart  进行DNS缓存刷新。此时应该可以正确避开百度访问谷歌了。
+其他很多搜索引擎用关键词hosts或者谷歌ip都能得到最新的hosts文件。一般来说，一两个月可能需要重新修改一次，这对于只需要google搜索引擎的用户来说，是一种比较好的选择。关于其原理，可移步hosts原理。理论上修改hosts存在一些安全问题，所以请找靠谱的hosts源，以防别人加入钓鱼IP或者别有用心的个人反向代理。
+最后 使用搜索引擎终究是一个习惯的问题，我相信一个好的搜索引擎是高效工作、愉悦生活的利器，这点上，百度离谷歌隔了了361个360。
+最后作结：
+ 携程事，准拟系统又误。谷歌曾有人妒。千金可卖贴吧主，滔滔恶行谁诉。君莫舞，君不见，玉环飞燕皆尘土。用户最苦。休去用百度，谷歌正在，缓慢回归路。
+ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/</guid>
+      <description> GAN 优点  隐式计算生成模型  缺点  训练难度大。无法定性判断模型优劣，易陷入局部极小或者根本无法学到有用信息。 模型坍塌(model collapse)。重复得到一致的输出。  DCGAN 优点  充分利用CNN提取信息的优良特性 image arithmetic。（戴眼镜的男人-不戴眼镜的男人+不戴眼镜的女人=戴眼镜的女人。 控制人脸的朝向） 判别器其实是一个特征提取器  缺点  特征表达是纠缠的（representation is entangled），即隐变量和噪声是纠缠在一起的  </description>
+    </item>
+    
+  </channel>
+</rss>

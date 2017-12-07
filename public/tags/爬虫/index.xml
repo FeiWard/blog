@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>爬虫 on Camel Shang</title>
+    <link>/tags/%E7%88%AC%E8%99%AB/</link>
+    <description>Recent content in 爬虫 on Camel Shang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2017 Camel Shang</copyright>
+    <lastBuildDate>Sat, 16 Jan 2016 04:27:58 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E7%88%AC%E8%99%AB/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>微信模拟登陆</title>
+      <link>/blog/%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%8B%9F%E7%99%BB%E9%99%86/</link>
+      <pubDate>Sat, 16 Jan 2016 04:27:58 +0000</pubDate>
+      
+      <guid>/blog/%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%8B%9F%E7%99%BB%E9%99%86/</guid>
+      <description>&lt;h2 id=&#34;微信公众号&#34;&gt;微信公众号&lt;/h2&gt;
+
+&lt;p&gt;近来开了一个公众号，之前做了一个校园家教、讲座、校车等零碎信息的聚合，主要也是基于python的爬虫。但是由于是免费的个人订阅号用户，开发者模式下的限制还是比较多的，比如开发模式下无法创建菜单就是一个令人无比心痛的限制。而且基于微信的理念，主动推送消息一直也是微信所不欢迎的。但是有了模拟登陆，普通用户也可以主动发送消息给订阅者了，当然，由于微信公众号的明确规定，48小时内该订阅者未主动发送消息给公众号，则该公众号无法主动发送消息给订阅者。这条限制就没有办法了，不过基于模拟登陆，可以做的事还是挺多的，比如监控女朋友的知乎、微博等动态，一有新消息就通过公众号推送给自己；监控自己的公交卡余额，低于某阈值则通过公众号将余额推送给自己，方便自己的出行。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

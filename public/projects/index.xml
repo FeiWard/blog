@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Camel Shang</title>
+    <link>/projects/</link>
+    <description>Recent content in Projects on Camel Shang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2017 Camel Shang</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>人丑就该多读书</title>
+      <link>/projects/read/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/read/</guid>
+      <description> 技术  C++ Primer  人文  白夜行   两朵相互取暖的黑玫瑰，光天之下断无妖艳之美，白夜之下方可喘息，而且为了这仅有的喘息，不惜将身上的伤刺，曾受过的伤刺，狠狠地刺到别人的身上。如此循环，只为白夜下的温存喘息。
+  寻找家园   寻找家园的伟大之处，在于给了我们回首往事亲临现场的窗口。人的生命具有局限性，曾经奉为圭臬的准则今天或许已经是谬论，曾经众人以为美的事物今天看来可能其丑无比。
+  月亮与六便士  </description>
+    </item>
+    
+    <item>
+      <title>紧跟大佬不掉队</title>
+      <link>/projects/papers/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/papers/</guid>
+      <description>Object Detection  RCNN Fast RCNN Faster RCNN YOLO SSD RFCN YOLO 9000 Feature-Fused SSD: Fast Detection for Small Objects Mask RCNN  Code in MXNet Code in Kears and TensorFlow  Focal Loss for Dense Object Detection  Neural Machine Translation  Sequence to Sequence Learning with Neural Networks Neural Machine Translation by Jointly Learning to Align and Translate Google&amp;rsquo;s Neural Machine Translation System Convolutional Sequence to Sequence Learning A Convolutional Encoder Model for Neural Machine Translation Refining Source Representations with Relation Networks for Neural Machine Translation  Neural Network  LeNet AlexNet vGG GoogLeNet ResNet  Deep Networks with Stochastic Depth Residual Networks Behave Like Ensembles of Relatively Shallow Networks  DenseNet Training RNNs as Fast as CNNs When is a Convolutional Filter Easy To Learn?</description>
+    </item>
+    
+    <item>
+      <title>自我驱动终生学</title>
+      <link>/projects/mooc/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/mooc/</guid>
+      <description> 技术自媒体  MacTalk 小道消息 王垠 Matrix67 酷壳 研发技能表 码农场  机器学习  Geoffrey E. Hinton Yann Lecun Andrew Ng 于仕琪 zouxy09 52ml Computational Attention Geoffrey Hinton Neural Network Tutorial Yann Lecun Courses Yann LeCun Deep Learning at Collège de France 2016 Coursera Machine Learning Stanford CS229 Machine learning Stanford CS231n  syllabus slides videos  UFLDL Coursera Deep Learning Deep Learning Book Reinforcement Learning: An Introduction  </description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>/projects/projects/</link>
+      <pubDate>Wed, 19 Aug 2015 20:29:37 -0700</pubDate>
+      
+      <guid>/projects/projects/</guid>
+      <description>Stay hungary. And if you get hungary, you should have something to eat.</description>
+    </item>
+    
+  </channel>
+</rss>

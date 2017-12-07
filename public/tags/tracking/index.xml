@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tracking on Camel Shang</title>
+    <link>/tags/tracking/</link>
+    <description>Recent content in Tracking on Camel Shang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2017 Camel Shang</copyright>
+    <lastBuildDate>Thu, 07 Dec 2017 13:53:47 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/tracking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tracking Notes</title>
+      <link>/blog/tracking-notes/</link>
+      <pubDate>Thu, 07 Dec 2017 13:53:47 +0800</pubDate>
+      
+      <guid>/blog/tracking-notes/</guid>
+      <description>task Given the initialized state (e.g., position and size) of a target object in a frame of a video, the goal of tracking is to estimate the states of the target in the subsequent frames.
+difficulties  illumination variation occlusion background clutters fast motion Out-of-Plane Rotation scale variation  common modules  target representation scheme search mechanism model update context information  evaluation  Precision Plot. Center location error. Success Plot.</description>
+    </item>
+    
+  </channel>
+</rss>

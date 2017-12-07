@@ -28,6 +28,11 @@ tags = ["projects"]
 + [Yann LeCun Deep Learning at Collège de France 2016](https://drive.google.com/open?id=0BxKBnD5y2M8NclFWSXNxa0JlZTg)
 + [Coursera Machine Learning](https://www.coursera.org/learn/machine-learning/home/welcome)
 + [Stanford CS229 Machine learning](http://cs229.stanford.edu/)
-+ [Stanford CS231n](http://cs231n.github.io/)  [syllabus](http://cs231n.stanford.edu/syllabus.html)  *[slides](http://cs231n.stanford.edu/slides/)* *[videos](https://www.youtube.com/playlist?list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC)*
++ [Stanford CS231n](http://cs231n.github.io/)
+  * [syllabus](http://cs231n.stanford.edu/syllabus.html)
+  * [slides](http://cs231n.stanford.edu/slides/)
+  * [videos](https://www.youtube.com/playlist?list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC)
 + [UFLDL](http://deeplearning.stanford.edu/tutorial/)
 + [Coursera Deep Learning](https://www.coursera.org/specializations/deep-learning)
++ [Deep Learning Book](http://www.deeplearningbook.org/)
++ [Reinforcement Learning: An Introduction](http://incompleteideas.net/sutton/book/the-book-2nd.html)
