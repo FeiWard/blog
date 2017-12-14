@@ -18,9 +18,9 @@
       <pubDate>Thu, 07 Dec 2017 14:24:40 +0800</pubDate>
       
       <guid>/blog/siamese-notes/</guid>
-      <description>做法 通过样本相似度驱动权重共享的网络学习嵌入的隐变量表达(embedding vector representation)
-siamese network Learning a Similarity Metric Discriminatively, with Application to Face Verofocation 假设对于正对 $ (X_1, X_2) $ 和负对$$(X_1, X_2^{&amp;lsquo;})$$
-$$\exists m&amp;gt;0, E_W(X_1, X_2)+m&amp;lt;E_W(X-1,X_2^&amp;lsquo;).$$
+      <description>task 通过样本相似度驱动权重共享的网络学习嵌入的隐变量表达(embedding vector representation)
+siamese network Learning a Similarity Metric Discriminatively, with Application to Face Verofocation 假设对于正对 $(X_1, X_2)$和负对$(X_1, X_2^{\prime})$
+$$\exists m&amp;gt;0, E_W(X_1, X_2)+m&amp;lt;E_W(X-1,X_2^\prime).$$
 损失函数
 $$ L(W)=\sum_{i=1}^{P}\ell(W,(Y,X_1,X_2)^{i}) $$ $$ \ell(W,(Y,X_1,X_2)^{i} = (1-Y)\ell_G(E_W(X_1,X_2)^i) + Y\ell_I(E_W(X_1,X_2)^i) $$
 Dimensionality Reduction by Learning an Invariant Mapping 对比损失函数(contrastive loss function)

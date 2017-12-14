@@ -49,11 +49,38 @@
     </item>
     
     <item>
+      <title>Gdd</title>
+      <link>/tags/gdd/</link>
+      <pubDate>Thu, 14 Dec 2017 19:47:15 +0800</pubDate>
+      
+      <guid>/tags/gdd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Developer Days</title>
+      <link>/tags/google-developer-days/</link>
+      <pubDate>Thu, 14 Dec 2017 19:47:15 +0800</pubDate>
+      
+      <guid>/tags/google-developer-days/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hosts</title>
       <link>/tags/hosts/</link>
       <pubDate>Wed, 31 Aug 2016 19:24:13 +0000</pubDate>
       
       <guid>/tags/hosts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Tue, 12 Dec 2017 13:20:40 +0800</pubDate>
+      
+      <guid>/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -94,6 +121,15 @@
     </item>
     
     <item>
+      <title>Tools</title>
+      <link>/tags/tools/</link>
+      <pubDate>Tue, 12 Dec 2017 13:20:40 +0800</pubDate>
+      
+      <guid>/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tracking</title>
       <link>/tags/tracking/</link>
       <pubDate>Thu, 07 Dec 2017 13:53:47 +0800</pubDate>
@@ -114,7 +150,7 @@
     <item>
       <title>Windows</title>
       <link>/tags/windows/</link>
-      <pubDate>Thu, 01 Sep 2016 20:56:28 +0000</pubDate>
+      <pubDate>Tue, 12 Dec 2017 13:20:40 +0800</pubDate>
       
       <guid>/tags/windows/</guid>
       <description></description>

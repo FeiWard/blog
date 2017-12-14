@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/blog/a-tour-of-gdd2017/</loc>
+    <lastmod>2017-12-14T19:47:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/tool/</loc>
+    <lastmod>2017-12-12T13:20:40+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/siamese-notes/</loc>
     <lastmod>2017-12-07T14:24:40+08:00</lastmod>
   </url>
@@ -74,7 +84,7 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2017-12-07T14:24:40+08:00</lastmod>
+    <lastmod>2017-12-14T19:47:15+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -86,7 +96,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-12-07T14:24:40+08:00</lastmod>
+    <lastmod>2017-12-14T19:47:15+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -108,8 +118,26 @@
   </url>
   
   <url>
+    <loc>/tags/gdd/</loc>
+    <lastmod>2017-12-14T19:47:15+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/google-developer-days/</loc>
+    <lastmod>2017-12-14T19:47:15+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/hosts/</loc>
     <lastmod>2016-08-31T19:24:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/linux/</loc>
+    <lastmod>2017-12-12T13:20:40+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -121,7 +149,7 @@
   
   <url>
     <loc>/projects/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-12T13:20:40+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -156,6 +184,12 @@
   </url>
   
   <url>
+    <loc>/tags/tools/</loc>
+    <lastmod>2017-12-12T13:20:40+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/tracking/</loc>
     <lastmod>2017-12-07T13:53:47+08:00</lastmod>
     <priority>0</priority>
@@ -169,7 +203,7 @@
   
   <url>
     <loc>/tags/windows/</loc>
-    <lastmod>2016-09-01T20:56:28+00:00</lastmod>
+    <lastmod>2017-12-12T13:20:40+08:00</lastmod>
     <priority>0</priority>
   </url>
   

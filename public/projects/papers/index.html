@@ -1166,6 +1166,11 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51326133-1"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} });
+</script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
 
@@ -1185,69 +1190,63 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
   });
 </script>
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() { // Fix
-  <code> tags after MathJax finishes running. This is a // hack to overcome a shortcoming of Markdown. Discussion at // https://github.com/mojombo/jekyll/issues/199
-    var all = MathJax.Hub.getAllJax(), i; for(i = 0; i
-    &lt; all.length; i +=1 ) { all[i].SourceElement().parentNode.className +=' has-jax' ; } }); </script>
 
-      
-      <script src="/js/highlight.min.js" defer></script>
-        
-      <script src="/js/progressively.min.js" defer></script>
-        
-      <script src="/js/social-share-kit.min.js" defer></script>
-       
+<script src="/js/highlight.min.js" defer></script>
+  
+<script src="/js/progressively.min.js" defer></script>
+  
+<script src="/js/social-share-kit.min.js" defer></script>
+ 
 
-      <script>
-        window.onload = function () {
+<script>
+  window.onload = function () {
+    {
+      {
+        if .Site.Params.highlightjs
+      }
+    }
+    hljs.initHighlighting(); {
+      {
+        end
+      }
+    } {
+      {
+        if .Site.Params.progressively
+      }
+    }
+    progressively.init({
+      delay: 30,
+      throttle: 50
+    }); {
+      {
+        end
+      }
+    } {
+      {
+        if .Site.Params.share
+      }
+    }
+    SocialShareKit.init({
+      twitter: {
+        text: '',
+        {
           {
-            {
-              if .Site.Params.highlightjs
-            }
+            if .Site.Params.twitter
           }
-          hljs.initHighlighting(); {
-            {
-              end
-            }
-          } {
-            {
-              if .Site.Params.progressively
-            }
+        }
+        via: '' {
+          {
+            end
           }
-          progressively.init({
-            delay: 30,
-            throttle: 50
-          }); {
-            {
-              end
-            }
-          } {
-            {
-              if .Site.Params.share
-            }
-          }
-          SocialShareKit.init({
-            twitter: {
-              text: '',
-              {
-                {
-                  if .Site.Params.twitter
-                }
-              }
-              via: '' {
-                {
-                  end
-                }
-              }
-            }
-          }); {
-            {
-              end
-            }
-          }
-        };
-      </script>
+        }
+      }
+    }); {
+      {
+        end
+      }
+    }
+  };
+</script>
 
 </body>
 </html>

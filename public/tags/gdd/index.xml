@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gdd on Camel Shang</title>
+    <link>/tags/gdd/</link>
+    <description>Recent content in Gdd on Camel Shang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2017 Camel Shang</copyright>
+    <lastBuildDate>Thu, 14 Dec 2017 19:47:15 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/gdd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Tour of GDD2017</title>
+      <link>/blog/a-tour-of-gdd2017/</link>
+      <pubDate>Thu, 14 Dec 2017 19:47:15 +0800</pubDate>
+      
+      <guid>/blog/a-tour-of-gdd2017/</guid>
+      <description>今年是我第一次参加 Google Developer Days(GDD) 活动，12月13日到14日两天体验下来的感受是：
+ 报名了没去的绝对后悔，没报名的明年一定要报名试试。
+ | | | | &amp;mdash;&amp;mdash;| &amp;mdash;&amp;mdash; | &amp;mdash;&amp;mdash; | | | | 稍微长一点的文本 |
+福利 不说技术分论坛有没收获，就说免费吃喝(两中一晚，饭菜挺好吃的，13号的晚宴请了乐队来表演)还送一堆外面买不到的礼品就很值得了。今年参会的嘉宾人手一份的礼物有： - 印有 GDD 的电脑包 - android things 开发板 - 明信片 - android 公仔 - google 贴纸
+除此之外，还能在现场体验谷歌最新的硬件产品，比如我就体验了： - pixel2 和 pixel2 xl 手机 - pixel chromebook 笔记本 - google daydream VR设备 - Google robotcar 以及 IoT 相关的硬件
+                     论坛 分论坛涉及范围很广，每个演讲大概持续半小时左右，因个人兴趣主要选择了 TensorFlow 相关以及 Google 力推的 Progressive Web Apps(PWA).</description>
+    </item>
+    
+  </channel>
+</rss>

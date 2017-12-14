@@ -1098,17 +1098,17 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
     
     
 
-<h1 id="做法">做法</h1>
+<h1 id="task">task</h1>
 
 <p>通过样本相似度驱动权重共享的网络学习嵌入的隐变量表达(embedding vector representation)</p>
 
 <h1 id="siamese-network">siamese network</h1>
 
-<h3 id="learning-a-similarity-metric-discriminatively-with-application-to-face-verofocation-yann-lecun-com-exdb-publis-pdf-chopra-05-pdf"><a href="yann.lecun.com/exdb/publis/pdf/chopra-05.pdf">Learning a Similarity Metric Discriminatively, with Application to Face Verofocation</a></h3>
+<h4 id="learning-a-similarity-metric-discriminatively-with-application-to-face-verofocation-yann-lecun-com-exdb-publis-pdf-chopra-05-pdf"><a href="yann.lecun.com/exdb/publis/pdf/chopra-05.pdf">Learning a Similarity Metric Discriminatively, with Application to Face Verofocation</a></h4>
 
-<p>假设对于正对 $ (X_1, X_2) $ 和负对$$(X_1, X_2^{&lsquo;})$$</p>
+<p>假设对于正对 $(X_1, X_2)$和负对$(X_1, X_2^{\prime})$</p>
 
-<p>$$\exists m&gt;0, E_W(X_1, X_2)+m&lt;E_W(X-1,X_2^&lsquo;).$$</p>
+<p>$$\exists m&gt;0, E_W(X_1, X_2)+m&lt;E_W(X-1,X_2^\prime).$$</p>
 
 <p><img src="https://user-images.githubusercontent.com/7688886/33700977-562d272a-db57-11e7-8719-a4fe230f88a9.png" alt="siamese" /></p>
 
@@ -1117,7 +1117,7 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 <p>$$ L(W)=\sum_{i=1}^{P}\ell(W,(Y,X_1,X_2)^{i}) $$
 $$ \ell(W,(Y,X_1,X_2)^{i} = (1-Y)\ell_G(E_W(X_1,X_2)^i) + Y\ell_I(E_W(X_1,X_2)^i) $$</p>
 
-<h3 id="dimensionality-reduction-by-learning-an-invariant-mapping-https-cs-nyu-edu-sumit-research-assets-cvpr06-pdf"><a href="https://cs.nyu.edu/~sumit/research/assets/cvpr06.pdf">Dimensionality Reduction by Learning an Invariant Mapping</a></h3>
+<h4 id="dimensionality-reduction-by-learning-an-invariant-mapping-https-cs-nyu-edu-sumit-research-assets-cvpr06-pdf"><a href="https://cs.nyu.edu/~sumit/research/assets/cvpr06.pdf">Dimensionality Reduction by Learning an Invariant Mapping</a></h4>
 
 <p>对比损失函数(contrastive loss function)</p>
 
@@ -1129,9 +1129,9 @@ $$ \ell(W,(Y,X_1,X_2)^{i} = (1-Y)\ell_G(E_W(X_1,X_2)^i) + Y\ell_I(E_W(X_1,X_2)^i
 
 <h1 id="triplet-loss">triplet loss</h1>
 
-<h3 id="learning-fine-grained-image-similarity-with-deep-ranking-https-arxiv-org-abs-1404-4661"><a href="https://arxiv.org/abs/1404.4661">Learning fine-grained image similarity with deep ranking</a></h3>
+<h4 id="learning-fine-grained-image-similarity-with-deep-ranking-https-arxiv-org-abs-1404-4661"><a href="https://arxiv.org/abs/1404.4661">Learning fine-grained image similarity with deep ranking</a></h4>
 
-<h3 id="deep-metreic-learning-using-triplet-network-https-arxiv-org-abs-1412-6622"><a href="https://arxiv.org/abs/1412.6622">deep metreic learning using triplet network</a></h3>
+<h4 id="deep-metreic-learning-using-triplet-network-https-arxiv-org-abs-1412-6622"><a href="https://arxiv.org/abs/1412.6622">deep metreic learning using triplet network</a></h4>
 
 <p>假设: 对于选择的粗略相似度度量$r$, 我们希望学习到相似度函数表达 $S$</p>
 
@@ -1153,7 +1153,7 @@ $$ d_- = { e^{||Net(x)-Net(x^-)||_2} \over e^{||Net(x)-Net(x^+)||_2}+e^{||Net(x)
 
 </div>
 
-<h3 id="facenet-a-unified-embedding-for-face-recognition-and-clustering-https-arxiv-org-abs-1503-03832"><a href="https://arxiv.org/abs/1503.03832">FaceNet: A Unified Embedding for Face Recognition and Clustering</a></h3>
+<h4 id="facenet-a-unified-embedding-for-face-recognition-and-clustering-https-arxiv-org-abs-1503-03832"><a href="https://arxiv.org/abs/1503.03832">FaceNet: A Unified Embedding for Face Recognition and Clustering</a></h4>
 
 <p>假设</p>
 
@@ -1184,7 +1184,7 @@ $$ d_- = { e^{||Net(x)-Net(x^-)||_2} \over e^{||Net(x)-Net(x^+)||_2}+e^{||Net(x)
 
 <p>$$||f(x_i^a)-f(x_i^p)||_2^2 &lt; ||f(x_i^a)-f(x_i^n)||_2^2.$$</p>
 
-<h3 id="learning-local-image-descriptors-with-deep-siamese-and-triplet-convolutional-networks-by-minimising-global-loss-functions-https-arxiv-org-abs-1512-09272"><a href="https://arxiv.org/abs/1512.09272">Learning Local Image Descriptors with Deep Siamese and Triplet Convolutional Networks by Minimising Global Loss Functions</a></h3>
+<h4 id="learning-local-image-descriptors-with-deep-siamese-and-triplet-convolutional-networks-by-minimising-global-loss-functions-https-arxiv-org-abs-1512-09272"><a href="https://arxiv.org/abs/1512.09272">Learning Local Image Descriptors with Deep Siamese and Triplet Convolutional Networks by Minimising Global Loss Functions</a></h4>
 
 <h1 id="附录">附录</h1>
 
@@ -1210,6 +1210,11 @@ $$ d_- = { e^{||Net(x)-Net(x^-)||_2} \over e^{||Net(x)-Net(x^+)||_2}+e^{||Net(x)
                     </div>
                     
                     <div style="width: 100%;"></div>
+                    
+                    <div>
+                        <a href="/blog/a-tour-of-gdd2017/">A Tour of GDD2017</a>
+                        <img class="icon" src="/img/next.svg" alt="next" />
+                    </div>
                     
                 </div>
             
@@ -1266,6 +1271,11 @@ $$ d_- = { e^{||Net(x)-Net(x^-)||_2} \over e^{||Net(x)-Net(x^+)||_2}+e^{||Net(x)
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51326133-1"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} });
+</script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
 
@@ -1285,69 +1295,63 @@ $$ d_- = { e^{||Net(x)-Net(x^-)||_2} \over e^{||Net(x)-Net(x^+)||_2}+e^{||Net(x)
   });
 </script>
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() { // Fix
-  <code> tags after MathJax finishes running. This is a // hack to overcome a shortcoming of Markdown. Discussion at // https://github.com/mojombo/jekyll/issues/199
-    var all = MathJax.Hub.getAllJax(), i; for(i = 0; i
-    &lt; all.length; i +=1 ) { all[i].SourceElement().parentNode.className +=' has-jax' ; } }); </script>
 
-      
-      <script src="/js/highlight.min.js" defer></script>
-        
-      <script src="/js/progressively.min.js" defer></script>
-        
-      <script src="/js/social-share-kit.min.js" defer></script>
-       
+<script src="/js/highlight.min.js" defer></script>
+  
+<script src="/js/progressively.min.js" defer></script>
+  
+<script src="/js/social-share-kit.min.js" defer></script>
+ 
 
-      <script>
-        window.onload = function () {
+<script>
+  window.onload = function () {
+    {
+      {
+        if .Site.Params.highlightjs
+      }
+    }
+    hljs.initHighlighting(); {
+      {
+        end
+      }
+    } {
+      {
+        if .Site.Params.progressively
+      }
+    }
+    progressively.init({
+      delay: 30,
+      throttle: 50
+    }); {
+      {
+        end
+      }
+    } {
+      {
+        if .Site.Params.share
+      }
+    }
+    SocialShareKit.init({
+      twitter: {
+        text: '',
+        {
           {
-            {
-              if .Site.Params.highlightjs
-            }
+            if .Site.Params.twitter
           }
-          hljs.initHighlighting(); {
-            {
-              end
-            }
-          } {
-            {
-              if .Site.Params.progressively
-            }
+        }
+        via: '' {
+          {
+            end
           }
-          progressively.init({
-            delay: 30,
-            throttle: 50
-          }); {
-            {
-              end
-            }
-          } {
-            {
-              if .Site.Params.share
-            }
-          }
-          SocialShareKit.init({
-            twitter: {
-              text: '',
-              {
-                {
-                  if .Site.Params.twitter
-                }
-              }
-              via: '' {
-                {
-                  end
-                }
-              }
-            }
-          }); {
-            {
-              end
-            }
-          }
-        };
-      </script>
+        }
+      }
+    }); {
+      {
+        end
+      }
+    }
+  };
+</script>
 
 </body>
 </html>

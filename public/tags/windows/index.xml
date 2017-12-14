@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2017 Camel Shang</copyright>
-    <lastBuildDate>Thu, 01 Sep 2016 20:56:28 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Dec 2017 13:20:40 +0800</lastBuildDate>
     
 	<atom:link href="/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tool</title>
+      <link>/projects/tool/</link>
+      <pubDate>Tue, 12 Dec 2017 13:20:40 +0800</pubDate>
+      
+      <guid>/projects/tool/</guid>
+      <description> Windows  [Wox]() [babun]() [Everything]() [Listary]() [Calibre]() [PicPick]() [CClearner]() [CPUZ]() [Potplayer]() [IrFanView]() [Sublime Text]() [VSCode]()  Linux  [oh-my-zsh]() [VSCode]()  </description>
+    </item>
     
     <item>
       <title>windows安装caffe并编译fast-rcnn-demo</title>

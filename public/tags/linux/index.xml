@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Camel Shang</title>
+    <link>/tags/linux/</link>
+    <description>Recent content in Linux on Camel Shang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2017 Camel Shang</copyright>
+    <lastBuildDate>Tue, 12 Dec 2017 13:20:40 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tool</title>
+      <link>/projects/tool/</link>
+      <pubDate>Tue, 12 Dec 2017 13:20:40 +0800</pubDate>
+      
+      <guid>/projects/tool/</guid>
+      <description> Windows  [Wox]() [babun]() [Everything]() [Listary]() [Calibre]() [PicPick]() [CClearner]() [CPUZ]() [Potplayer]() [IrFanView]() [Sublime Text]() [VSCode]()  Linux  [oh-my-zsh]() [VSCode]()  </description>
+    </item>
+    
+  </channel>
+</rss>
