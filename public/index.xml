@@ -20,19 +20,19 @@
       <guid>/blog/a-tour-of-gdd2017/</guid>
       <description>今年是我第一次参加 Google Developer Days(GDD) 活动，12月13日到14日两天体验下来的感受是：
  报名了没去的绝对后悔，没报名的明年一定要报名试试。
- | | | | &amp;mdash;&amp;mdash;| &amp;mdash;&amp;mdash; | &amp;mdash;&amp;mdash; | | | | 稍微长一点的文本 |
-福利 不说技术分论坛有没收获，就说免费吃喝(两中一晚，饭菜挺好吃的，13号的晚宴请了乐队来表演)还送一堆外面买不到的礼品就很值得了。今年参会的嘉宾人手一份的礼物有： - 印有 GDD 的电脑包 - android things 开发板 - 明信片 - android 公仔 - google 贴纸
-除此之外，还能在现场体验谷歌最新的硬件产品，比如我就体验了： - pixel2 和 pixel2 xl 手机 - pixel chromebook 笔记本 - google daydream VR设备 - Google robotcar 以及 IoT 相关的硬件
-                     论坛 分论坛涉及范围很广，每个演讲大概持续半小时左右，因个人兴趣主要选择了 TensorFlow 相关以及 Google 力推的 Progressive Web Apps(PWA).</description>
+ 福利 不说技术分论坛有没收获，就说免费吃喝(两中一晚，饭菜挺好吃的，13号的晚宴请了乐队来表演)还送一堆外面买不到的礼品就很值得了。今年参会的嘉宾人手一份的礼物有：
+ 印有 GDD 的电脑包 android things 开发板 明信片 android 公仔 google 贴纸  除此之外，还能在现场体验谷歌最新的硬件产品，比如我就体验了：
+ pixel2 和 pixel2 xl 手机 pixel chromebook 笔记本 google daydream VR设备 Google robotcar 以及 IoT 相关的硬件  论坛 分论坛涉及范围很广，每个演讲大概持续半小时左右，因个人兴趣主要选择了 TensorFlow 相关以及 Google 力推的 Progressive Web Apps(PWA).
+TensorFlow 自从在Google IO 2017 宣布 AI first 之后， Google 很多工作内容都不可避免的与 TensorFlow 扯上关系了(毕竟用 TensorFlow 炼丹的男孩可以成为 TFBoys，蛤蛤蛤)，从这次的大会上可以看出 Google Brain 发力的主要方向： Google Cloud(TPU), TensorFlow 的相关开发(社区维护，顶尖ML/DL模型的简易API调用接口)，TensorFlow Lite 等。可能是时间较短，稍有DL背景的我，在这些分论坛上获取到的新知识较少，更大程度上是了解 Google 正在做什么。大部分时间感觉都在听：</description>
     </item>
     
     <item>
-      <title>Tool</title>
+      <title>磨刀不误砍柴工</title>
       <link>/projects/tool/</link>
       <pubDate>Tue, 12 Dec 2017 13:20:40 +0800</pubDate>
       
       <guid>/projects/tool/</guid>
-      <description> Windows  [Wox]() [babun]() [Everything]() [Listary]() [Calibre]() [PicPick]() [CClearner]() [CPUZ]() [Potplayer]() [IrFanView]() [Sublime Text]() [VSCode]()  Linux  [oh-my-zsh]() [VSCode]()  </description>
+      <description> Windows  Wox babun Everything Listary Calibre PicPick CClearner CPUZ Potplayer IrFanView Sublime Text VSCode  Linux  oh-my-zsh VSCode  </description>
     </item>
     
     <item>
@@ -198,15 +198,6 @@ ipconfig /flushdns  或linux用户打开终端运行
       
       <guid>/projects/projects/</guid>
       <description>Stay hungary. And if you get hungary, you should have something to eat.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/blog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/</guid>
-      <description> GAN 优点  隐式计算生成模型  缺点  训练难度大。无法定性判断模型优劣，易陷入局部极小或者根本无法学到有用信息。 模型坍塌(model collapse)。重复得到一致的输出。  DCGAN 优点  充分利用CNN提取信息的优良特性 image arithmetic。（戴眼镜的男人-不戴眼镜的男人+不戴眼镜的女人=戴眼镜的女人。 控制人脸的朝向） 判别器其实是一个特征提取器  缺点  特征表达是纠缠的（representation is entangled），即隐变量和噪声是纠缠在一起的  </description>
     </item>
     
   </channel>

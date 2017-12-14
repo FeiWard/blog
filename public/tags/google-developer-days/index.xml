@@ -20,10 +20,10 @@
       <guid>/blog/a-tour-of-gdd2017/</guid>
       <description>今年是我第一次参加 Google Developer Days(GDD) 活动，12月13日到14日两天体验下来的感受是：
  报名了没去的绝对后悔，没报名的明年一定要报名试试。
- | | | | &amp;mdash;&amp;mdash;| &amp;mdash;&amp;mdash; | &amp;mdash;&amp;mdash; | | | | 稍微长一点的文本 |
-福利 不说技术分论坛有没收获，就说免费吃喝(两中一晚，饭菜挺好吃的，13号的晚宴请了乐队来表演)还送一堆外面买不到的礼品就很值得了。今年参会的嘉宾人手一份的礼物有： - 印有 GDD 的电脑包 - android things 开发板 - 明信片 - android 公仔 - google 贴纸
-除此之外，还能在现场体验谷歌最新的硬件产品，比如我就体验了： - pixel2 和 pixel2 xl 手机 - pixel chromebook 笔记本 - google daydream VR设备 - Google robotcar 以及 IoT 相关的硬件
-                     论坛 分论坛涉及范围很广，每个演讲大概持续半小时左右，因个人兴趣主要选择了 TensorFlow 相关以及 Google 力推的 Progressive Web Apps(PWA).</description>
+ 福利 不说技术分论坛有没收获，就说免费吃喝(两中一晚，饭菜挺好吃的，13号的晚宴请了乐队来表演)还送一堆外面买不到的礼品就很值得了。今年参会的嘉宾人手一份的礼物有：
+ 印有 GDD 的电脑包 android things 开发板 明信片 android 公仔 google 贴纸  除此之外，还能在现场体验谷歌最新的硬件产品，比如我就体验了：
+ pixel2 和 pixel2 xl 手机 pixel chromebook 笔记本 google daydream VR设备 Google robotcar 以及 IoT 相关的硬件  论坛 分论坛涉及范围很广，每个演讲大概持续半小时左右，因个人兴趣主要选择了 TensorFlow 相关以及 Google 力推的 Progressive Web Apps(PWA).
+TensorFlow 自从在Google IO 2017 宣布 AI first 之后， Google 很多工作内容都不可避免的与 TensorFlow 扯上关系了(毕竟用 TensorFlow 炼丹的男孩可以成为 TFBoys，蛤蛤蛤)，从这次的大会上可以看出 Google Brain 发力的主要方向： Google Cloud(TPU), TensorFlow 的相关开发(社区维护，顶尖ML/DL模型的简易API调用接口)，TensorFlow Lite 等。可能是时间较短，稍有DL背景的我，在这些分论坛上获取到的新知识较少，更大程度上是了解 Google 正在做什么。大部分时间感觉都在听：</description>
     </item>
     
   </channel>
