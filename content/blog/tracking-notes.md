@@ -31,6 +31,7 @@ of tracking is to estimate the states of the target in the subsequent frames.
 - Success Plot. Bounding box overlap.
 
 # papers
+### SOT
 - CVPR2013 Online Object Tracking A Benchmark
 - [Object Tracking Benchmark](http://faculty.ucmerced.edu/mhyang/papers/pami15_tracking_benchmark.pdf)
 - [CT]()
@@ -44,3 +45,13 @@ of tracking is to estimate the states of the target in the subsequent frames.
     * [project](http://www.robots.ox.ac.uk/~joao/circulant/v)
 - [KCF](http://www.robots.ox.ac.uk/~joao/publications/henriques_tpami2015.pdf)
     * [project](http://www.robots.ox.ac.uk/~joao/circulant/v)
+### MOT
+- [Learning to Track: Online Multi-Object Tracking by Decision Making](http://cvgl.stanford.edu/papers/xiang_iccv15.pdf)
+    * [code](https://github.com/yuxng/MDP_Tracking)
+- [Near-Online Multi-target Tracking with Aggregated Local Flow Descriptor](https://arxiv.org/abs/1504.02340)
+- [Online Multi-Target Tracking Using Recurrent Neural Networks](https://arxiv.org/abs/1604.03635)
+- [Multi-Target Tracking by Discrete-Continuous Energy Minimization](http://www.milanton.de/files/pami2016/pami2016-anton.pdf)
+- [Tracking The Untrackable: Learning To Track Multiple Cues with Long-Term Dependencies](https://arxiv.org/abs/1701.01909)
+- [Tracking the Trackers: An Analysis of the State of the Art in Multiple Object Tracking](https://arxiv.org/abs/1704.02781)
+- [High-Speed Tracking-by-Detection Without Using Image Information](http://elvera.nue.tu-berlin.de/files/1517Bochinski2017.pdf)
+    * [code](https://github.com/bochinski/iou-tracker/)
