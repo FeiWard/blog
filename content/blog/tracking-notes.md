@@ -31,7 +31,9 @@ of tracking is to estimate the states of the target in the subsequent frames.
 - Success Plot. Bounding box overlap.
 
 # papers
+
 ### SOT
+
 - CVPR2013 Online Object Tracking A Benchmark
 - [Object Tracking Benchmark](http://faculty.ucmerced.edu/mhyang/papers/pami15_tracking_benchmark.pdf)
 - [CT]()
@@ -45,8 +47,10 @@ of tracking is to estimate the states of the target in the subsequent frames.
     * [project](http://www.robots.ox.ac.uk/~joao/circulant/v)
 - [KCF](http://www.robots.ox.ac.uk/~joao/publications/henriques_tpami2015.pdf)
     * [project](http://www.robots.ox.ac.uk/~joao/circulant/v)
+
 ### MOT
-- [Learning to Track: Online Multi-Object Tracking by Decision Making](http://cvgl.stanford.edu/papers/xiang_iccv15.pdf)https://bitbucket.org/amilan/rnntracking
+
+- [Learning to Track: Online Multi-Object Tracking by Decision Making](http://cvgl.stanford.edu/papers/xiang_iccv15.pdf)
     * [code](https://github.com/yuxng/MDP_Tracking)
 - [Near-Online Multi-target Tracking with Aggregated Local Flow Descriptor](https://arxiv.org/abs/1504.02340)
 - [Online Multi-Target Tracking Using Recurrent Neural Networks](https://arxiv.org/abs/1604.03635)
@@ -61,4 +65,5 @@ of tracking is to estimate the states of the target in the subsequent frames.
 - [Recurrent Autoregressive Networks for Online Multi-Object Tracking](https://arxiv.org/pdf/1711.02741.pdf)
 
 # sources
+
 - [Deep-Learning-for-Tracking-and-Detection](https://github.com/abhineet123/Deep-Learning-for-Tracking-and-Detection)
