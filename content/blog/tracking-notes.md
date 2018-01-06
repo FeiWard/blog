@@ -38,7 +38,6 @@ of tracking is to estimate the states of the target in the subsequent frames.
 - [Object Tracking Benchmark](http://faculty.ucmerced.edu/mhyang/papers/pami15_tracking_benchmark.pdf)
 - [CT](www4.comp.polyu.edu.hk/~cslzhang/CT/eccv_ct_camera.pdf) ([project](http://www4.comp.polyu.edu.hk/~cslzhang/CT/CT.htm))
 - [OAB](http://www.vision.ee.ethz.ch/boostingTrackers/Grabner2006RealTimeTracking.pdf) ([project](http://www.vision.ee.ethz.ch/boostingTrackers/onlineBoosting.htm))
-
 - [STRUCK](http://ieeexplore.ieee.org/document/7360205/) ([CPU code in C++](https://github.com/samhare/struck), [GPU code](https://bitbucket.org/sgolodetz/thunderstruck/src))
 - [TLD](ieeexplore.ieee.org/document/5540231)
 - [CSK](http://www.robots.ox.ac.uk/~joao/publications/henriques_eccv2012.pdf) ([project](http://www.robots.ox.ac.uk/~joao/circulant/v))
