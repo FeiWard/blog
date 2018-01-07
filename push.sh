@@ -1,13 +1,14 @@
 msg=$1
-echo "your commit : $msg"
-echo "push to blog"
+hugo -t cocoa-eh
+echo "==your commit : $msg"
+echo "==push to blog"
 git add *
 git commit -m msg
 git push origin master
-echo "push to blog done"
-echo "push to public"
+echo "==push to blog done"
+echo "==push to public"
 cd public
 git add *
 git commit -m msg
 git push origin master
-echo "push to public done"
+echo "==push to public done"
